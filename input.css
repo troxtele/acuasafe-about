@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h_16 {
+  @apply h-16;
+}
+
+.container {
+  @apply max-w-[80rem] m-auto px-6;
+}
+
+section {
+  @apply py-10 overflow-hidden;
+}
+
+img {
+  @apply max-w-[40rem];
+}
