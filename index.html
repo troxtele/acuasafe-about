@@ -25,12 +25,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Swiper Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="./dist/output.css" />
+    <!-- Alpine JS -->
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
     <title>Document</title>
   </head>
-  <body class="text-md font-sans text-center">
-    <header class="backdrop-blur-lg">
+  <body class="text-md font-sans text-center text-slate-900">
+    <header class="bg-slate-50/80 backdrop-blur-lg sticky top-0 z-50">
       <div class="container">
         <div
           class="content flex justify-between items-center text-slate-800 py-8"
@@ -43,13 +54,55 @@
 
           <nav>
             <ul class="hidden md:flex gap-12 font-bold capitalize py-2">
-              <li><a href="#">home</a></li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">elements</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">blog</a></li>
-              <li><a href="#">contact</a></li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >Pages</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >elements</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >Shop</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >contact</a
+                >
+              </li>
             </ul>
           </nav>
 
@@ -64,15 +117,23 @@
     <!----------------------------------------->
     <!----- Main Section ----->
     <!----------------------------------------->
-    <!-- <main class="Main">
-      <div class="container h-[60vh] bg-cover bg-no-repeat bg-center">
-        <div
-          class="content text-4 sm:text-5 md:text-6xl flex justify-center items-center h-full"
-        >
-          <h1 class="capitalize font-bold text-slate-50">About Us</h1>
+    <main class="Main bg-main-bg bg-cover bg-no-repeat bg-center">
+      <div class="bg-color w-full bg-cyan-400/80 relative">
+        <div class="absolute w-full">
+          <img class="" src="./images/main/shape-1.png" alt="" />
+        </div>
+        <div class="container h-[60vh]">
+          <div
+            class="content text-4 sm:text-5 md:text-6xl flex justify-center items-center h-full"
+          >
+            <h1 class="capitalize font-bold text-slate-50">About Us</h1>
+          </div>
+        </div>
+        <div class="absolute bottom-0 w-full">
+          <img class="" src="./images/main/banner-shap.png" alt="" />
         </div>
       </div>
-    </main> -->
+    </main>
 
     <!----------------------------------------->
     <!----- About Section ----->
@@ -122,16 +183,19 @@
     </section>
 
     <!----------------------------------------->
-    <!----- Nav Section ----->
+    <!----- Service Section ----->
     <!----------------------------------------->
     <section>
-      <div class="container leading-5">
+      <div class="container">
         <div class="content grid justify-center items-center gap-14">
           <div class="header">
-            <h2>A Trusted Name In <br> Bottled Water Industry</h2>
+            <h2>
+              A Trusted Name In <br />
+              Bottled Water Industry
+            </h2>
           </div>
-          <div class="text grid grid-cols-4 gap-10">
-            <div class="item_1 grid gap-2">
+          <div class="text grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+            <div class="item_1 grid gap-4">
               <h4
                 class="text-default-text-col text-3xl text-bold capitalize font-spartan"
               >
@@ -141,7 +205,7 @@
                 >Our Processing plant ensures the best Purity.</span
               >
             </div>
-            <div class="item_2 grid gap-2">
+            <div class="item_2 grid gap-4">
               <h4
                 class="text-default-text-col text-3xl text-bold capitalize font-spartan"
               >
@@ -151,7 +215,7 @@
                 >Get the Chlorine and heavy metal free water.</span
               >
             </div>
-            <div class="item_3 grid gap-2">
+            <div class="item_3 grid gap-4">
               <h4
                 class="text-default-text-col text-3xl text-bold capitalize font-spartan"
               >
@@ -161,7 +225,7 @@
                 >Multiple step filtering ensures the best quality water.</span
               >
             </div>
-            <div class="item_3 grid gap-2">
+            <div class="item_3 grid gap-4">
               <h4
                 class="text-default-text-col text-3xl text-bold capitalize font-spartan"
               >
@@ -175,6 +239,587 @@
         </div>
       </div>
     </section>
+
+    <!----------------------------------------->
+    <!----- Client Section ----->
+    <!----------------------------------------->
+    <section>
+      <div class="container">
+        <div class="content">
+          <div class="header">
+            <h2>What Our Client are Saying About Acuasafe</h2>
+            <div class="swiper client_slider py-20">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="team_1 flex gap-8 justify-center items-center">
+                    <img
+                      class="rounded-full"
+                      src="./images/client/appointment-1.jpg"
+                      alt="appointment-1"
+                    />
+                    <div class="review grid gap-3">
+                      <div
+                        class="star flex gap-4 text-cyan-400 text-lg text-start"
+                      >
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+
+                      <p class="text-lg">
+                        Outstanding Work!! Would suggest Acuasafe for both
+                        continuing service and emergency scenarios.
+                      </p>
+
+                      <!-- Author -->
+                      <div class="author">
+                        <div
+                          class="name capitalize text-default-text-col font-semibold text-2xl"
+                        >
+                          <h4>james</h4>
+                        </div>
+
+                        <div class="position uppercase text-cyan-400">
+                          <span>shop owner</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team_1 flex gap-8 justify-center items-center">
+                    <img
+                      class="rounded-full"
+                      src="./images/client/appointment-1.jpg"
+                      alt="appointment-1"
+                    />
+                    <div class="review grid gap-3">
+                      <div
+                        class="star flex gap-4 text-cyan-400 text-lg text-start"
+                      >
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+
+                      <p class="text-lg">
+                        Outstanding Work!! Would suggest Acuasafe for both
+                        continuing service and emergency scenarios.
+                      </p>
+
+                      <!-- Author -->
+                      <div class="author">
+                        <div
+                          class="name capitalize text-default-text-col font-semibold text-2xl"
+                        >
+                          <h4>james</h4>
+                        </div>
+
+                        <div class="position uppercase text-cyan-400">
+                          <span>shop owner</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team_1 flex gap-8 justify-center items-center">
+                    <img
+                      class="rounded-full"
+                      src="./images/client/appointment-1.jpg"
+                      alt="appointment-1"
+                    />
+                    <div class="review grid gap-3">
+                      <div
+                        class="star flex gap-4 text-cyan-400 text-lg text-start"
+                      >
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+
+                      <p class="text-lg">
+                        Outstanding Work!! Would suggest Acuasafe for both
+                        continuing service and emergency scenarios.
+                      </p>
+
+                      <!-- Author -->
+                      <div class="author">
+                        <div
+                          class="name capitalize text-default-text-col font-semibold text-2xl"
+                        >
+                          <h4>james</h4>
+                        </div>
+
+                        <div class="position uppercase text-cyan-400">
+                          <span>shop owner</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team_1 flex gap-8 justify-center items-center">
+                    <img
+                      class="rounded-full"
+                      src="./images/client/appointment-1.jpg"
+                      alt="appointment-1"
+                    />
+                    <div class="review grid gap-3">
+                      <div
+                        class="star flex gap-4 text-cyan-400 text-lg text-start"
+                      >
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+
+                      <p class="text-lg">
+                        Outstanding Work!! Would suggest Acuasafe for both
+                        continuing service and emergency scenarios.
+                      </p>
+
+                      <!-- Author -->
+                      <div class="author">
+                        <div
+                          class="name capitalize text-default-text-col font-semibold text-2xl"
+                        >
+                          <h4>james</h4>
+                        </div>
+
+                        <div class="position uppercase text-cyan-400">
+                          <span>shop owner</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="client_pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------------------------------------->
+    <!----- Pricing Section ----->
+    <!----------------------------------------->
+    <section>
+      <div class="container">
+        <div
+          x-data="{ swapToggle: 'yearly' }"
+          class="cotent grid grid-cols-2 gap-20"
+        >
+          <div class="left flex flex-col gap-6">
+            <div class="header capitalize">
+              <h2>Choose Your Best Pricing Plan</h2>
+            </div>
+            <p class="text-default-light-stone">
+              cuasafe ensures quality over services along with affordable
+              prices. Our product rates are available on a Monthly and Yearly
+              basis. Choose the package that best suits you.
+            </p>
+            <!-- Swap Price -->
+            <div
+              class="swap mt-6 font-semibold flex justify-between text-lg border rounded-full max-w-[16rem] overflow-hidden"
+            >
+              <!-- Monthly -->
+              <button
+                x-on:click="swapToggle = 'monthly'"
+                x-bind:class="swapToggle === 'monthly' ? 'bg-default-blue text-slate-50': '' "
+                class="monthly transition-all duration-500 capitalize w-full h-full py-3 px-2"
+              >
+                monthly
+              </button>
+              <!-- Yearly -->
+              <button
+                x-on:click="swapToggle = 'yearly'"
+                x-bind:class="swapToggle === 'yearly' ? 'bg-default-blue text-slate-50' : '' "
+                class="yearly transition-all duration-500 capitalize w-full h-full py-3 px-2"
+              >
+                yearly
+              </button>
+            </div>
+          </div>
+
+          <!-- Pricing Carts -->
+          <div class="carts flex relative">
+            <!-- cart -->
+            <div
+              x-bind:class="swapToggle === 'yearly' ? '-z-10 absolute -right-[10%] transform scale-90': 'scale-100' "
+              class="cart bg-slate-50 transition-all duration-2000"
+            >
+              <div class="relative border-slate-500 w-[23rem] shadow-xl">
+                <!-- Price -->
+                <div class="price">
+                  <!-- Price bg -->
+                  <div class="price_bg">
+                    <img
+                      class="absolute right-8 -top-[0.8rem]"
+                      src="./images/Pricing/price-bg.png"
+                      alt=""
+                    />
+                  </div>
+                  <!-- price -->
+                  <div
+                    class="price absolute right-[41px] grid gap-1 bg-default-blue w-[89px] text-slate-50"
+                  >
+                    <span class="font-bold text-3xl">$50</span>
+                    <span class="uppercase">yearly</span>
+                  </div>
+                  <div class="price_fr">
+                    <img
+                      class="absolute right-[41px] top-[64px]"
+                      src="./images/Pricing/price-fr.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="top_bg">
+                  <img
+                    class="w-full"
+                    src="./images/Pricing/cart-bg.png"
+                    alt=""
+                  />
+                </div>
+                <!-- Header -->
+                <div
+                  class="header absolute top-[2.2rem] left-[2.6rem] capitalize text-slate-50 text-3xl font-bold"
+                >
+                  <h3>
+                    Standard <br />
+                    pricing
+                  </h3>
+                </div>
+                <!-- Options -->
+                <ul
+                  class="options flex flex-col gap-4 mt-10 text-slate-800 text-[1.2rem] font-semibold"
+                >
+                  <li class="flex justify-center items-center gap-2">
+                    <i
+                      class="fa-solid fa-check text-default-dark-blue text-2xl"
+                    ></i>
+                    <span>With Hol Cool</span>
+                  </li>
+                  <li class="flex justify-center items-center gap-2">
+                    <i
+                      class="fa-solid fa-check text-default-dark-blue text-2xl"
+                    ></i>
+                    <span>Variation of Water</span>
+                  </li>
+                  <li class="flex justify-center items-center gap-2">
+                    <i
+                      class="fa-solid fa-check text-default-dark-blue text-2xl"
+                    ></i>
+                    <span>Home Delivery</span>
+                  </li>
+                  <li class="flex justify-center items-center gap-2">
+                    <i
+                      class="fa-solid fa-check text-default-dark-blue text-2xl"
+                    ></i>
+                    <span>Team Access</span>
+                  </li>
+                  <li class="flex justify-center items-center gap-2">
+                    <i
+                      class="fa-solid fa-check text-default-dark-blue text-2xl"
+                    ></i>
+                    <span>Privacy Settings</span>
+                  </li>
+                </ul>
+
+                <!-- Button -->
+                <button
+                  class="my-6 text-slate-50 bg-cyan-400 rounded-full py-3 px-10 text-xl"
+                >
+                  <a href="#"> Services </a>
+                </button>
+              </div>
+            </div>
+            <!-- cart -->
+            <div
+              x-bind:class="swapToggle === 'monthly' ? '-z-10 absolute -right-[10%] transform scale-90': 'scale-100' "
+              class="cart bg-slate-50 transition-all duration-2000"
+            >
+              <div class="relative border-slate-500 w-[23rem] shadow-xl">
+                <!-- Price -->
+                <div class="price">
+                  <!-- Price bg -->
+                  <div class="price_bg">
+                    <img
+                      class="absolute right-8 -top-[0.8rem]"
+                      src="./images/Pricing/price-bg.png"
+                      alt=""
+                    />
+                  </div>
+                  <!-- price -->
+                  <div
+                    class="price absolute right-[41px] grid gap-1 bg-default-blue w-[89px] text-slate-50"
+                  >
+                    <span class="font-bold text-3xl">$49</span>
+                    <span class="uppercase">yearly</span>
+                  </div>
+                  <div class="price_fr">
+                    <img
+                      class="absolute right-[41px] top-[64px]"
+                      src="./images/Pricing/price-fr.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="top_bg">
+                  <img
+                    class="w-full"
+                    src="./images/Pricing/cart-bg.png"
+                    alt=""
+                  />
+                </div>
+                <!-- Header -->
+                <div
+                  class="header absolute top-[2.2rem] left-[2.6rem] capitalize text-slate-50 text-3xl font-bold"
+                >
+                  <h3>
+                    Standard <br />
+                    pricing
+                  </h3>
+                </div>
+                <!-- Options -->
+                <ul
+                  class="options flex flex-col gap-4 mt-10 text-slate-800 text-[1.2rem] font-semibold"
+                >
+                  <li class="flex justify-center items-center gap-2">
+                    <i
+                      class="fa-solid fa-check text-default-dark-blue text-2xl"
+                    ></i>
+                    <span>With Hol Cool</span>
+                  </li>
+                  <li class="flex justify-center items-center gap-2">
+                    <i
+                      class="fa-solid fa-check text-default-dark-blue text-2xl"
+                    ></i>
+                    <span>Variation of Water</span>
+                  </li>
+                  <li class="flex justify-center items-center gap-2">
+                    <i
+                      class="fa-solid fa-check text-default-dark-blue text-2xl"
+                    ></i>
+                    <span>Home Delivery</span>
+                  </li>
+                  <li class="flex justify-center items-center gap-2">
+                    <i
+                      class="fa-solid fa-check text-default-dark-blue text-2xl"
+                    ></i>
+                    <span>Team Access</span>
+                  </li>
+                  <li class="flex justify-center items-center gap-2">
+                    <i
+                      class="fa-solid fa-check text-default-dark-blue text-2xl"
+                    ></i>
+                    <span>Privacy Settings</span>
+                  </li>
+                </ul>
+
+                <!-- Button -->
+                <button
+                  class="my-6 text-slate-50 bg-cyan-400 rounded-full py-3 px-10 text-xl"
+                >
+                  <a href="#"> Services </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------------------------------------->
+    <!----- Team Section ----->
+    <!----------------------------------------->
+    <section>
+      <div class="container text-start">
+        <div class="content grid gap-12 items-center">
+          <div class="header justify-self-center text-center">
+            <h2 class="">
+              Our Dedicated Team Members <br />
+              value Your Needs
+            </h2>
+          </div>
+          <!-- Team members -->
+          <div
+            class="members w-full flex flex-col md:flex-row justify-between gap-4 items-center flex-wrap px-6 sm:px-10"
+          >
+            <!-- Member 1 -->
+            <div class="member grid gap-6">
+              <div class="img_wrapper relative">
+                <!-- hover img bg -->
+                <div
+                  class="hover_img absolute -inset-0 transition-all duration-300"
+                ></div>
+                <img src="./images/members/member-1.jpg" alt="" />
+
+                <div
+                  class="icons absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-0 transition-all duration-500"
+                >
+                  <ul class="flex gap-3">
+                    <li class="">
+                      <a
+                        href="#"
+                        class="hover:bg-default-blue flex justify-center items-center w-12 h-12 bg-stone-100 rounded-full text-xl hover:text-slate-50 transition-all duration-300"
+                      >
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a
+                        href="#"
+                        class="hover:bg-default-blue flex justify-center items-center w-12 h-12 bg-stone-100 rounded-full text-xl hover:text-slate-50 transition-all duration-300"
+                      >
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a
+                        href="#"
+                        class="hover:bg-default-blue flex justify-center items-center w-12 h-12 bg-stone-100 rounded-full text-xl hover:text-slate-50 transition-all duration-300"
+                      >
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Member Info -->
+              <div class="info flex flex-col justify-center items-center">
+                <a
+                  href="#"
+                  class="capitalize hover:text-default-blue transition-all duration-300 text-default-text-col text-3xl font-semibold"
+                >
+                  Md Sweem
+                </a>
+                <div class="position text-default-light-stone font-semibold">
+                  <span class="uppercase">WATER TESTER</span>
+                </div>
+              </div>
+            </div>
+            <!-- Member 2 -->
+            <div class="member grid gap-6">
+              <div class="img_wrapper relative">
+                <!-- hover img bg -->
+                <div
+                  class="hover_img absolute -inset-0 transition-all duration-300"
+                ></div>
+                <img src="./images/members/member-2.jpg" alt="" />
+
+                <div
+                  class="icons absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-0 transition-all duration-500"
+                >
+                  <ul class="flex gap-3">
+                    <li class="">
+                      <a
+                        href="#"
+                        class="hover:bg-default-blue flex justify-center items-center w-12 h-12 bg-stone-100 rounded-full text-xl hover:text-slate-50 transition-all duration-300"
+                      >
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a
+                        href="#"
+                        class="hover:bg-default-blue flex justify-center items-center w-12 h-12 bg-stone-100 rounded-full text-xl hover:text-slate-50 transition-all duration-300"
+                      >
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a
+                        href="#"
+                        class="hover:bg-default-blue flex justify-center items-center w-12 h-12 bg-stone-100 rounded-full text-xl hover:text-slate-50 transition-all duration-300"
+                      >
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Member Info -->
+              <div class="info flex flex-col justify-center items-center">
+                <a
+                  href="#"
+                  class="capitalize hover:text-default-blue transition-all duration-300 text-default-text-col text-3xl font-semibold"
+                >
+                  Christian Bale
+                </a>
+                <div class="position text-default-light-stone font-semibold">
+                  <span class="uppercase">WATER DELIVERY MAN</span>
+                </div>
+              </div>
+            </div>
+            <!-- Member 3 -->
+            <div class="member grid gap-6">
+              <div class="img_wrapper relative">
+                <!-- hover img bg -->
+                <div
+                  class="hover_img absolute -inset-0 transition-all duration-300"
+                ></div>
+                <img src="./images/members/member-3.jpg" alt="" />
+
+                <div
+                  class="icons absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-0 transition-all duration-500"
+                >
+                  <ul class="flex gap-3">
+                    <li class="">
+                      <a
+                        href="#"
+                        class="hover:bg-default-blue flex justify-center items-center w-12 h-12 bg-stone-100 rounded-full text-xl hover:text-slate-50 transition-all duration-300"
+                      >
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a
+                        href="#"
+                        class="hover:bg-default-blue flex justify-center items-center w-12 h-12 bg-stone-100 rounded-full text-xl hover:text-slate-50 transition-all duration-300"
+                      >
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a
+                        href="#"
+                        class="hover:bg-default-blue flex justify-center items-center w-12 h-12 bg-stone-100 rounded-full text-xl hover:text-slate-50 transition-all duration-300"
+                      >
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Member Info -->
+              <div class="info flex flex-col justify-center items-center">
+                <a
+                  href="#"
+                  class="capitalize hover:text-default-blue transition-all duration-300 text-default-text-col text-3xl font-semibold"
+                >
+                  Hard Branots
+                </a>
+                <div class="position text-default-light-stone font-semibold">
+                  <span class="uppercase">EXPRESS DELIVERY</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
 
