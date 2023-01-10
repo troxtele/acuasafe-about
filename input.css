@@ -11,11 +11,15 @@
 }
 
 section {
-  @apply py-16 overflow-hidden;
+  @apply py-16;
 }
 
 h2 {
-  @apply text-4xl font-bold text-default-text-col leading-10;
+  @apply text-4xl font-bold text-default-text-col;
+}
+
+h2 {
+  line-height: 1.5;
 }
 
 /* About Section*/
@@ -46,5 +50,22 @@ h2 {
   @apply bg-slate-900/50;
 }
 .member:hover .icons {
-  @apply scale-100
+  @apply scale-100;
+}
+
+/* Footer Section */
+/* footer {
+  @apply bg-default-footer-bg h-screen
+} */
+/* .footer_curbe_bg {
+  background-image: url('./images/footer/footer.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100vw;
+} */
+
+.footer_curbe_bg img {
+  width: 150000px;
 }

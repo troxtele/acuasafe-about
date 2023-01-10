@@ -40,7 +40,12 @@
     ></script>
     <title>Document</title>
   </head>
-  <body class="text-md font-sans text-center text-slate-900">
+  <!----------------------------------------->
+  <!----- Header Section ----->
+  <!----------------------------------------->
+  <body
+    class="text-md font-sans text-center text-slate-900 w-full h-full overflow-x-hidden"
+  >
     <header class="bg-slate-50/80 backdrop-blur-lg sticky top-0 z-50">
       <div class="container">
         <div
@@ -181,7 +186,6 @@
         </div>
       </div>
     </section>
-
     <!----------------------------------------->
     <!----- Service Section ----->
     <!----------------------------------------->
@@ -239,7 +243,59 @@
         </div>
       </div>
     </section>
-
+    <!----------------------------------------->
+    <!----- Protect Section ----->
+    <!----------------------------------------->
+    <section
+      class="relative bg-protect-bg bg-center bg-cover bg-no-repeat text-slate-50 pb-32 mb-10 lg:mb-32"
+    >
+      <!-- Protect bg -->
+      <div class="absolute top-0 left-0 protect_left_bg">
+        <img src="./images/protect/shape-6.png" alt="shape-6" />
+      </div>
+      <!-- Main Content -->
+      <div class="container">
+        <div class="content grid gap-10 justify-start items-center mt-32 pb-20">
+          <div class="header">
+            <h3 class="text-4xl font-bold">
+              Protect Your Family with One <br />
+              of The Best Water Filtering <br />
+              System.
+            </h3>
+          </div>
+          <!-- Residential -->
+          <div
+            class="residential grid gap-4 relative before:absolute before:h-14 before:w-14 before:rounded-full before:bg-default-blue before:-left-10 before:top-1/2 before:transform before:-translate-y-1/2"
+          >
+            <h4 class="capitalize text-2xl font-bold">Residential Waters</h4>
+            <p class="text-lg px-10">
+              We deliver water for residential users on several cost saving
+              <br />
+              plans like Monthly, yearly plans.
+            </p>
+          </div>
+          <!-- Commercial -->
+          <div
+            class="commercial grid gap-4 relative before:absolute before:h-14 before:w-14 before:rounded-full before:bg-default-blue before:-left-10 before:top-1/2 before:transform before:-translate-y-1/2"
+          >
+            <h4 class="capitalize text-2xl font-bold">Commercial Waters</h4>
+            <p class="text-lg px-10">
+              Specialities of our Commercial water is our plants are ready for
+              <br />
+              commercial level water deliveries.
+            </p>
+          </div>
+        </div>
+        <!-- Water Bottle img -->
+        <div class="bottle_img absolute -right-40 -bottom-10 drop-shadow-xl">
+          <img
+            class="border-[1rem] border-slate-50"
+            src="./images/protect/bottle.jpg"
+            alt="bottle_img"
+          />
+        </div>
+      </div>
+    </section>
     <!----------------------------------------->
     <!----- Client Section ----->
     <!----------------------------------------->
@@ -247,7 +303,10 @@
       <div class="container">
         <div class="content">
           <div class="header">
-            <h2>What Our Client are Saying About Acuasafe</h2>
+            <h2>
+              What Our Client are Saying <br />
+              About Acuasafe
+            </h2>
             <div class="swiper client_slider py-20">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -817,6 +876,219 @@
         </div>
       </div>
     </section>
+
+    <!----------------------------------------->
+    <!----- Footer Section ----->
+    <!----------------------------------------->
+    <footer class="overflow-hidden bg-default-footer-bg mt-20 text-slate-50">
+      <div class="footer_curbe_bg">
+        <img class="" src="./images/footer/footer.png" alt="" />
+      </div>
+      <!-- Footer Top -->
+      <div class="container footer_top">
+        <!-- Contact -->
+        <div class="contact mt-40 flex justify-between items-center">
+          <h1 class="text-3xl text-semibold">
+            Please <span class="text-default-blue">Call Us</span> to Take an
+            Extraordinary Service
+          </h1>
+          <button class="">
+            <a
+              href="tel:http://(773)%20225-3523"
+              class="text-slate-50 bg-cyan-400 rounded-full py-5 px-10 text-xl flex justify-center items-center gap-4"
+              ><i class="fas fa-phone"></i>(773) 225-3523</a
+            >
+          </button>
+        </div>
+        <!-- footer line -->
+        <div class="footer_line justify-center my-20">
+          <img src="./images/footer/footer-line.png" alt="" />
+        </div>
+      </div>
+      <!-- Footer Main -->
+      <div class="footer_main">
+        <div
+          class="content container grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-20"
+        >
+          <!-- item 1 -->
+          <div class="item_1 flex flex-col gap-8 text-start">
+            <div class="footer_logo">
+              <img
+                class="max-w-[12rem]"
+                src="./images/footer/footer-logo.png"
+                alt="footer-logo"
+              />
+            </div>
+            <!-- text container -->
+            <div class="text">
+              <span class="text-lg"
+                >Delivering the Purest Water for a Healthy life</span
+              >
+              <!-- Open hour -->
+              <div class="open_hour grid gap-4">
+                <h3 class="text-lg font-semibold capit">Open Hours:</h3>
+                <!-- Time -->
+                <span class="time">Mon - Sat: 9AM - 6PM.</span>
+              </div>
+            </div>
+          </div>
+          <!-- item 2 -->
+          <div class="item_2 flex flex-col gap-8 text-start">
+            <div class="header pt-2">
+              <h3 class="text-2xl font-semibold capitalize">Address</h3>
+            </div>
+            <!-- Info list -->
+            <ul class="info-list grid gap-6">
+              <li class="flex gap-6 text-lg items-center">
+                <i class="text-default-blue fal fa fa-map-marker-alt"></i>
+                <span>Flat 20, Reynolds Neck, FV77 8WS</span>
+              </li>
+              <li class="flex gap-6 text-lg items-center">
+                <i class="text-default-blue fal fa fa-phone"></i>
+                <span>Call Us: 333-666-0001</span>
+              </li>
+              <li class="flex gap-6 text-lg items-center">
+                <i class="text-default-blue fal fa fa-envelope-open-text"></i
+                ><span>info@example.com</span>
+              </li>
+            </ul>
+          </div>
+          <!-- item 3 -->
+          <div class="item_3 flex flex-col gap-8 text-start">
+            <div class="header pt-2">
+              <h3 class="text-2xl font-semibold capitalize">Usefull Link</h3>
+            </div>
+            <!-- Links list -->
+            <ul class="links-list grid gap-4">
+              <li>
+                <a href="https://z.commonsupport.com/acuasafe/about-us/"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="https://z.commonsupport.com/acuasafe/our-services/"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="https://z.commonsupport.com/acuasafe/market-research/"
+                  >Market Research</a
+                >
+              </li>
+              <li>
+                <a href="https://z.commonsupport.com/acuasafe/blog-grid/"
+                  >Our Blog</a
+                >
+              </li>
+              <li>
+                <a href="https://z.commonsupport.com/acuasafe/contact/"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Item-4 -->
+          <div class="item_4 flex flex-col gap-8 text-start">
+            <div class="header pt-2">
+              <h3 class="text-2xl font-semibold capitalize">Subscribe</h3>
+            </div>
+            <!-- Lorem -->
+            <div class="content grid gap-6">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <!-- Email Input -->
+            <div
+              class="flex bg-slate-100 text-slate-900 border rounded-full overflow-hidden max-w-[18rem]"
+            >
+              <span
+                ><input
+                  type="email"
+                  value=""
+                  size="40"
+                  class="input w-full h-full border-none focus: bg-transparent placeholder:select-none placeholder:text-slate-400 py-4 pl-5 focus:outline-none focus:border-4 focus:border-l-default-blue focus:border-y-default-blue focus:ring-1 focus:ring-sky-500 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 rounded-bl-full rounded-tl-full"
+                  aria-required="true"
+                  aria-invalid="false"
+                  placeholder="Your Email"
+              /></span>
+              <button
+                class="px-4 bg-default-blue text-slate-50 border-l rounded-tr-md border-tr"
+                type="submit"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer bottom -->
+      <div class="footer_bottom bg-default-footer-bottom">
+        <div class="container">
+          <div
+            class="content py-10 mt-10 flex flex-wrap gap-4 justify-between items-center"
+          >
+            <!-- Copyright -->
+            <div class="copyright">
+              <p>
+                <a
+                  href="#"
+                  class="text-default-blue border-b-2 border-transparent hover:border-default-blue"
+                  >Acuasafe</a
+                >
+                © 2022 All Right Reserved
+              </p>
+            </div>
+            <!-- Link Icons -->
+            <div class="link_icons">
+              <ul class="flex gap-4 text-md">
+                <li>
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex justify-center items-center rounded-full bg-slate-500 hover:bg-default-blue transition-all duration-300 hover:text-slate-50"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex justify-center items-center rounded-full bg-slate-500 hover:bg-default-blue transition-all duration-300 hover:text-slate-50"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex justify-center items-center rounded-full bg-slate-500 hover:bg-default-blue transition-all duration-300 hover:text-slate-50"
+                    ><i class="fa-brands fa-google-plus-g"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex justify-center items-center rounded-full bg-slate-500 hover:bg-default-blue transition-all duration-300 hover:text-slate-50"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <!-- Terms & Policy -->
+            <div class="wrapper flex gap-4">
+              <a
+                href="#"
+                class="hover:text-default-blue transition-all duration-200"
+                >Terms of Service</a
+              >
+              <span>|</span>
+              <a
+                href="#"
+                class="hover:text-default-blue transition-all duration-200"
+                >Privacy Policy
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- Swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
