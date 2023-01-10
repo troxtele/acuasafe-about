@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Open Sans -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- League Sparta -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font awesome -->
     <link
       rel="stylesheet"
@@ -16,11 +29,11 @@
     <link rel="stylesheet" href="./dist/output.css" />
     <title>Document</title>
   </head>
-  <body class="text-lg">
+  <body class="text-md font-sans text-center">
     <header class="backdrop-blur-lg">
       <div class="container">
         <div
-          class="content flex justify-between items-center text-slate-800 py-4"
+          class="content flex justify-between items-center text-slate-800 py-8"
         >
           <div class="logo">
             <figure>
@@ -29,7 +42,7 @@
           </div>
 
           <nav>
-            <ul class="flex gap-8 font-semibold capitalize py-2">
+            <ul class="hidden md:flex gap-12 font-bold capitalize py-2">
               <li><a href="#">home</a></li>
               <li><a href="#">Pages</a></li>
               <li><a href="#">Services</a></li>
@@ -40,12 +53,131 @@
             </ul>
           </nav>
 
-          <div class="icons flex gap-6">
+          <div class="icons flex gap-10 text-lg">
             <i class="fa-solid fa-magnifying-glass"></i>
             <i class="fa-solid fa-cart-shopping"></i>
           </div>
         </div>
       </div>
     </header>
+
+    <!----------------------------------------->
+    <!----- Main Section ----->
+    <!----------------------------------------->
+    <!-- <main class="Main">
+      <div class="container h-[60vh] bg-cover bg-no-repeat bg-center">
+        <div
+          class="content text-4 sm:text-5 md:text-6xl flex justify-center items-center h-full"
+        >
+          <h1 class="capitalize font-bold text-slate-50">About Us</h1>
+        </div>
+      </div>
+    </main> -->
+
+    <!----------------------------------------->
+    <!----- About Section ----->
+    <!----------------------------------------->
+    <section class="about">
+      <div class="container">
+        <div
+          class="content grid md:grid-cols-2 justify-between gap-10 md:gap-16"
+        >
+          <div class="image md:-ml-20">
+            <img
+              class="max-w-[42rem] w-full"
+              src="./images/about/about-1.png"
+              alt=""
+            />
+          </div>
+          <div class="text flex flex-col gap-6 text-center py-10">
+            <h2 class="text-4xl font-bold text-default-text-col">
+              We Always Want Safe and Healthy Water for Healthy Life.
+            </h2>
+            <div class="pera grid gap-10 text-stone-500">
+              <p>
+                We know that as water is the most essential element for all
+                living beings, not only humans, and you have to take it
+                regularly, you are searching for the best quality water
+                consisting of natural PH balance and teste. Without these
+                criteria, your health may be in danger sooner or later.
+              </p>
+              <p>
+                We the Acuasafe team ensure you the purest and healthiest water
+                for daily life with the affordable price. Our QC team regularly
+                monitors and checkup the water quality ensuring you get the best
+                quality.
+              </p>
+            </div>
+            <button class="mt-6">
+              <a
+                class="text-slate-50 bg-cyan-400 rounded-full py-3 px-10 text-xl"
+                href="#"
+              >
+                Services
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------------------->
+    <!----- Nav Section ----->
+    <!----------------------------------------->
+    <section>
+      <div class="container leading-5">
+        <div class="content grid justify-center items-center gap-14">
+          <div class="header">
+            <h2>A Trusted Name In <br> Bottled Water Industry</h2>
+          </div>
+          <div class="text grid grid-cols-4 gap-10">
+            <div class="item_1 grid gap-2">
+              <h4
+                class="text-default-text-col text-3xl text-bold capitalize font-spartan"
+              >
+                Maxium Purity
+              </h4>
+              <span class="text-default-light-stone"
+                >Our Processing plant ensures the best Purity.</span
+              >
+            </div>
+            <div class="item_2 grid gap-2">
+              <h4
+                class="text-default-text-col text-3xl text-bold capitalize font-spartan"
+              >
+                Cholorine Free
+              </h4>
+              <span class="text-default-light-stone"
+                >Get the Chlorine and heavy metal free water.</span
+              >
+            </div>
+            <div class="item_3 grid gap-2">
+              <h4
+                class="text-default-text-col text-3xl text-bold capitalize font-spartan"
+              >
+                5 Steps Filtration
+              </h4>
+              <span class="text-default-light-stone"
+                >Multiple step filtering ensures the best quality water.</span
+              >
+            </div>
+            <div class="item_3 grid gap-2">
+              <h4
+                class="text-default-text-col text-3xl text-bold capitalize font-spartan"
+              >
+                Maxium Purity
+              </h4>
+              <span class="text-default-light-stone"
+                >We maintain balanced PH level for healthiest water.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
+
+<!----------------------------------------->
+<!----- Nav Section ----->
+<!----------------------------------------->

@@ -7,13 +7,26 @@
 }
 
 .container {
-  @apply max-w-[80rem] m-auto px-6;
+  @apply max-w-[82rem] m-auto px-6;
 }
 
 section {
   @apply py-10 overflow-hidden;
 }
 
-img {
-  @apply max-w-[40rem];
+h2 {
+  @apply text-4xl font-bold text-default-text-col
+}
+
+.f {
+  background-image: url("../images/about/shape-2.png");
+}
+
+/* About Section*/
+main {
+  background-image: url("../images/about/shape-1.png"),
+    url("./images/about/about-bg.jpg"), url("./images/about/shape-2.png");
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
 }
