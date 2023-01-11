@@ -44,7 +44,7 @@
   <!----- Header Section ----->
   <!----------------------------------------->
   <body
-    class="text-md font-sans text-center text-slate-900 w-full h-full overflow-x-hidden"
+    class="text-md text-center text-slate-900 w-full h-full overflow-x-hidden"
   >
     <header class="bg-slate-50/80 backdrop-blur-lg sticky top-0 z-50">
       <div class="container">
@@ -58,7 +58,7 @@
           </div>
 
           <nav>
-            <ul class="hidden md:flex gap-12 font-bold capitalize py-2">
+            <ul class="hidden lg:flex gap-12 font-bold capitalize py-2">
               <li>
                 <a
                   href="#"
@@ -129,7 +129,7 @@
         </div>
         <div class="container h-[60vh]">
           <div
-            class="content text-4 sm:text-5 md:text-6xl flex justify-center items-center h-full"
+            class="content text-4xl sm:text-5xl md:text-6xl flex justify-center items-center h-full"
           >
             <h1 class="capitalize font-bold text-slate-50">About Us</h1>
           </div>
@@ -246,50 +246,55 @@
     <!----------------------------------------->
     <!----- Protect Section ----->
     <!----------------------------------------->
-    <section
-      class="relative bg-protect-bg bg-center bg-cover bg-no-repeat text-slate-50 pb-32 mb-10 lg:mb-32"
-    >
+    <section class="protect relative text-slate-50 pb-32 lg:mb-32">
+      <!-- All Content Wrapper -->
       <!-- Protect bg -->
       <div class="absolute top-0 left-0 protect_left_bg">
         <img src="./images/protect/shape-6.png" alt="shape-6" />
       </div>
-      <!-- Main Content -->
-      <div class="container">
-        <div class="content grid gap-10 justify-start items-center mt-32 pb-20">
-          <div class="header">
-            <h3 class="text-4xl font-bold">
-              Protect Your Family with One <br />
-              of The Best Water Filtering <br />
-              System.
-            </h3>
-          </div>
-          <!-- Residential -->
+      <div
+        class="bg bg-protect-bg pb-20 bg-center bg-cover bg-no-repeat grid lg:grid-cols-7 pt-32"
+      >
+        <!-- Main Content -->
+        <div
+          class="col-span-3 px-10 lg:px-0 justify-self-end lg:translate-x-20"
+        >
           <div
-            class="residential grid gap-4 relative before:absolute before:h-14 before:w-14 before:rounded-full before:bg-default-blue before:-left-10 before:top-1/2 before:transform before:-translate-y-1/2"
+            class="content flex flex-col gap-10 justify-center items-center lg:pb-20"
           >
-            <h4 class="capitalize text-2xl font-bold">Residential Waters</h4>
-            <p class="text-lg px-10">
-              We deliver water for residential users on several cost saving
-              <br />
-              plans like Monthly, yearly plans.
-            </p>
-          </div>
-          <!-- Commercial -->
-          <div
-            class="commercial grid gap-4 relative before:absolute before:h-14 before:w-14 before:rounded-full before:bg-default-blue before:-left-10 before:top-1/2 before:transform before:-translate-y-1/2"
-          >
-            <h4 class="capitalize text-2xl font-bold">Commercial Waters</h4>
-            <p class="text-lg px-10">
-              Specialities of our Commercial water is our plants are ready for
-              <br />
-              commercial level water deliveries.
-            </p>
+            <div class="header">
+              <h3 class="text-4xl font-bold">
+                Protect Your Family with One of The Best Water Filtering System.
+              </h3>
+            </div>
+            <!-- Residential -->
+            <div
+              class="residential max-w-[30rem] md:max-w-[40.5rem] grid gap-4 relative before:absolute before:h-10 before:w-10 md:before:h-14 md:before:w-14 before:rounded-full before:bg-default-blue before:-left-7 md:before:-left-10 before:top-1/2 before:transform before:-translate-y-1/2"
+            >
+              <h4 class="capitalize text-2xl font-bold">Residential Waters</h4>
+              <p class="text-lg px-10">
+                We deliver water for residential users on several cost saving
+                plans like Monthly, yearly plans.
+              </p>
+            </div>
+            <!-- Commercial -->
+            <div
+              class="commercial max-w-[30rem] md:max-w-[40.5rem] grid gap-4 relative before:absolute before:h-10 before:w-10 md:before:h-14 md:before:w-14 before:rounded-full before:bg-default-blue before:-left-7 md:before:-left-10 before:top-1/2 before:transform before:-translate-y-1/2"
+            >
+              <h4 class="capitalize text-2xl font-bold">Commercial Waters</h4>
+              <p class="text-lg px-10">
+                Specialities of our Commercial water is our plants are ready for
+                commercial level water deliveries.
+              </p>
+            </div>
           </div>
         </div>
         <!-- Water Bottle img -->
-        <div class="bottle_img absolute -right-40 -bottom-10 drop-shadow-xl">
+        <div
+          class="bottle_img px-6 md:px-0 md:translate-x-36 translate-y-20 lg:translate-y-44 col-span-4 w-full"
+        >
           <img
-            class="border-[1rem] border-slate-50"
+            class="border-[1rem] border-slate-50 w-full drop-shadow-xl"
             src="./images/protect/bottle.jpg"
             alt="bottle_img"
           />
@@ -313,121 +318,7 @@
                   <div class="team_1 flex gap-8 justify-center items-center">
                     <img
                       class="rounded-full"
-                      src="./images/client/appointment-1.jpg"
-                      alt="appointment-1"
-                    />
-                    <div class="review grid gap-3">
-                      <div
-                        class="star flex gap-4 text-cyan-400 text-lg text-start"
-                      >
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-
-                      <p class="text-lg">
-                        Outstanding Work!! Would suggest Acuasafe for both
-                        continuing service and emergency scenarios.
-                      </p>
-
-                      <!-- Author -->
-                      <div class="author">
-                        <div
-                          class="name capitalize text-default-text-col font-semibold text-2xl"
-                        >
-                          <h4>james</h4>
-                        </div>
-
-                        <div class="position uppercase text-cyan-400">
-                          <span>shop owner</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="team_1 flex gap-8 justify-center items-center">
-                    <img
-                      class="rounded-full"
-                      src="./images/client/appointment-1.jpg"
-                      alt="appointment-1"
-                    />
-                    <div class="review grid gap-3">
-                      <div
-                        class="star flex gap-4 text-cyan-400 text-lg text-start"
-                      >
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-
-                      <p class="text-lg">
-                        Outstanding Work!! Would suggest Acuasafe for both
-                        continuing service and emergency scenarios.
-                      </p>
-
-                      <!-- Author -->
-                      <div class="author">
-                        <div
-                          class="name capitalize text-default-text-col font-semibold text-2xl"
-                        >
-                          <h4>james</h4>
-                        </div>
-
-                        <div class="position uppercase text-cyan-400">
-                          <span>shop owner</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="team_1 flex gap-8 justify-center items-center">
-                    <img
-                      class="rounded-full"
-                      src="./images/client/appointment-1.jpg"
-                      alt="appointment-1"
-                    />
-                    <div class="review grid gap-3">
-                      <div
-                        class="star flex gap-4 text-cyan-400 text-lg text-start"
-                      >
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-
-                      <p class="text-lg">
-                        Outstanding Work!! Would suggest Acuasafe for both
-                        continuing service and emergency scenarios.
-                      </p>
-
-                      <!-- Author -->
-                      <div class="author">
-                        <div
-                          class="name capitalize text-default-text-col font-semibold text-2xl"
-                        >
-                          <h4>james</h4>
-                        </div>
-
-                        <div class="position uppercase text-cyan-400">
-                          <span>shop owner</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="team_1 flex gap-8 justify-center items-center">
-                    <img
-                      class="rounded-full"
-                      src="./images/client/appointment-1.jpg"
+                      src="./images/client/client-1.jpg"
                       alt="appointment-1"
                     />
                     <div class="review grid gap-3">
@@ -471,11 +362,11 @@
     <!----------------------------------------->
     <!----- Pricing Section ----->
     <!----------------------------------------->
-    <section>
+    <section class="overflow-hidden">
       <div class="container">
         <div
           x-data="{ swapToggle: 'yearly' }"
-          class="cotent grid grid-cols-2 gap-20"
+          class="cotent grid lg:grid-cols-2 gap-20"
         >
           <div class="left flex flex-col gap-6">
             <div class="header capitalize">
@@ -511,10 +402,12 @@
 
           <!-- Pricing Carts -->
           <div class="carts flex relative">
+            <!-- cart bg -->
+            <div class="absolute cart_bg"></div>
             <!-- cart -->
             <div
-              x-bind:class="swapToggle === 'yearly' ? '-z-10 absolute -right-[10%] transform scale-90': 'scale-100' "
-              class="cart bg-slate-50 transition-all duration-2000"
+              x-bind:class="swapToggle === 'yearly' ? 'translate-x-0 scale-100 z-20': 'absolute translate-x-52  scale-[.8]' "
+              class="cart bg-slate-50 transform duration-1000"
             >
               <div class="relative border-slate-500 w-[23rem] shadow-xl">
                 <!-- Price -->
@@ -531,12 +424,12 @@
                   <div
                     class="price absolute right-[41px] grid gap-1 bg-default-blue w-[89px] text-slate-50"
                   >
-                    <span class="font-bold text-3xl">$50</span>
+                    <span class="font-bold text-3xl">$299</span>
                     <span class="uppercase">yearly</span>
                   </div>
                   <div class="price_fr">
                     <img
-                      class="absolute right-[41px] top-[64px]"
+                      class="absolute right-[41px] top-[62px]"
                       src="./images/Pricing/price-fr.png"
                       alt=""
                     />
@@ -551,7 +444,7 @@
                 </div>
                 <!-- Header -->
                 <div
-                  class="header absolute top-[2.2rem] left-[2.6rem] capitalize text-slate-50 text-3xl font-bold"
+                  class="header absolute top-[1rem] left-[2.6rem] capitalize text-slate-50 text-3xl font-bold"
                 >
                   <h3>
                     Standard <br />
@@ -560,52 +453,53 @@
                 </div>
                 <!-- Options -->
                 <ul
-                  class="options flex flex-col gap-4 mt-10 text-slate-800 text-[1.2rem] font-semibold"
+                  class="options flex flex-col gap-4 mt-10 text-slate-700 text-[1rem] font-semibold"
                 >
                   <li class="flex justify-center items-center gap-2">
                     <i
                       class="fa-solid fa-check text-default-dark-blue text-2xl"
                     ></i>
-                    <span>With Hol Cool</span>
+                    <span class="w-[16rem]">With Hol Cool</span>
                   </li>
                   <li class="flex justify-center items-center gap-2">
                     <i
                       class="fa-solid fa-check text-default-dark-blue text-2xl"
                     ></i>
-                    <span>Variation of Water</span>
+                    <span class="w-[16rem]">Variation of Water</span>
                   </li>
                   <li class="flex justify-center items-center gap-2">
                     <i
                       class="fa-solid fa-check text-default-dark-blue text-2xl"
                     ></i>
-                    <span>Home Delivery</span>
+                    <span class="w-[16rem]">Home Delivery</span>
                   </li>
-                  <li class="flex justify-center items-center gap-2">
-                    <i
-                      class="fa-solid fa-check text-default-dark-blue text-2xl"
-                    ></i>
-                    <span>Team Access</span>
+                  <li
+                    class="flex justify-center items-center gap-2 text-stone-400"
+                  >
+                    <i class="fa-solid fa-check text-xl"></i>
+                    <span class="w-[16rem]">Team Access</span>
                   </li>
-                  <li class="flex justify-center items-center gap-2">
-                    <i
-                      class="fa-solid fa-check text-default-dark-blue text-2xl"
-                    ></i>
-                    <span>Privacy Settings</span>
+                  <li
+                    class="flex justify-center items-center gap-2 text-stone-400"
+                  >
+                    <i class="fa-solid fa-check text-xl"></i>
+                    <span class="w-[16rem]">Privacy Settings</span>
                   </li>
                 </ul>
 
                 <!-- Button -->
                 <button
-                  class="my-6 text-slate-50 bg-cyan-400 rounded-full py-3 px-10 text-xl"
+                  class="my-8 text-slate-50 bg-cyan-400 rounded-full py-3 px-10 text-xl"
                 >
-                  <a href="#"> Services </a>
+                  <a href="#" class="capitalize font-semibold"> learn more </a>
                 </button>
               </div>
             </div>
             <!-- cart -->
+            <!-- monthly -->
             <div
-              x-bind:class="swapToggle === 'monthly' ? '-z-10 absolute -right-[10%] transform scale-90': 'scale-100' "
-              class="cart bg-slate-50 transition-all duration-2000"
+              x-bind:class="swapToggle === 'monthly' ? 'translate-x-0 scale-100 z-20': 'absolute translate-x-52 scale-[.8]' "
+              class="cart bg-slate-50 transform duration-1000"
             >
               <div class="relative border-slate-500 w-[23rem] shadow-xl">
                 <!-- Price -->
@@ -623,11 +517,11 @@
                     class="price absolute right-[41px] grid gap-1 bg-default-blue w-[89px] text-slate-50"
                   >
                     <span class="font-bold text-3xl">$49</span>
-                    <span class="uppercase">yearly</span>
+                    <span class="uppercase">monthly</span>
                   </div>
                   <div class="price_fr">
                     <img
-                      class="absolute right-[41px] top-[64px]"
+                      class="absolute right-[41px] top-[62px]"
                       src="./images/Pricing/price-fr.png"
                       alt=""
                     />
@@ -642,7 +536,7 @@
                 </div>
                 <!-- Header -->
                 <div
-                  class="header absolute top-[2.2rem] left-[2.6rem] capitalize text-slate-50 text-3xl font-bold"
+                  class="header absolute top-[1rem] left-[2.6rem] capitalize text-slate-50 text-3xl font-bold"
                 >
                   <h3>
                     Standard <br />
@@ -651,45 +545,45 @@
                 </div>
                 <!-- Options -->
                 <ul
-                  class="options flex flex-col gap-4 mt-10 text-slate-800 text-[1.2rem] font-semibold"
+                  class="options flex flex-col gap-4 mt-10 text-slate-700 text-[1rem] font-semibold"
                 >
                   <li class="flex justify-center items-center gap-2">
                     <i
                       class="fa-solid fa-check text-default-dark-blue text-2xl"
                     ></i>
-                    <span>With Hol Cool</span>
+                    <span class="w-[16rem]">With Hol Cool</span>
                   </li>
                   <li class="flex justify-center items-center gap-2">
                     <i
                       class="fa-solid fa-check text-default-dark-blue text-2xl"
                     ></i>
-                    <span>Variation of Water</span>
+                    <span class="w-[16rem]">Variation of Water</span>
                   </li>
                   <li class="flex justify-center items-center gap-2">
                     <i
                       class="fa-solid fa-check text-default-dark-blue text-2xl"
                     ></i>
-                    <span>Home Delivery</span>
+                    <span class="w-[16rem]">Home Delivery</span>
                   </li>
-                  <li class="flex justify-center items-center gap-2">
-                    <i
-                      class="fa-solid fa-check text-default-dark-blue text-2xl"
-                    ></i>
-                    <span>Team Access</span>
+                  <li
+                    class="flex justify-center items-center gap-2 text-stone-400"
+                  >
+                    <i class="fa-solid fa-check text-xl"></i>
+                    <span class="w-[16rem]">Team Access</span>
                   </li>
-                  <li class="flex justify-center items-center gap-2">
-                    <i
-                      class="fa-solid fa-check text-default-dark-blue text-2xl"
-                    ></i>
-                    <span>Privacy Settings</span>
+                  <li
+                    class="flex justify-center items-center gap-2 text-stone-400"
+                  >
+                    <i class="fa-solid fa-check text-xl"></i>
+                    <span class="w-[16rem]">Privacy Settings</span>
                   </li>
                 </ul>
 
                 <!-- Button -->
                 <button
-                  class="my-6 text-slate-50 bg-cyan-400 rounded-full py-3 px-10 text-xl"
+                  class="my-8 text-slate-50 bg-cyan-400 rounded-full py-3 px-10 text-xl"
                 >
-                  <a href="#"> Services </a>
+                  <a href="#" class="capitalize font-semibold"> learn more </a>
                 </button>
               </div>
             </div>
@@ -700,7 +594,7 @@
     <!----------------------------------------->
     <!----- Team Section ----->
     <!----------------------------------------->
-    <section>
+    <section class="mt-10 md:mt-20">
       <div class="container text-start">
         <div class="content grid gap-12 items-center">
           <div class="header justify-self-center text-center">
@@ -711,7 +605,7 @@
           </div>
           <!-- Team members -->
           <div
-            class="members w-full flex flex-col md:flex-row justify-between gap-4 items-center flex-wrap px-6 sm:px-10"
+            class="members w-full flex flex-col md:flex-row justify-between gap-4 items-center px-6 sm:px-10"
           >
             <!-- Member 1 -->
             <div class="member grid gap-6">
@@ -757,11 +651,13 @@
               <div class="info flex flex-col justify-center items-center">
                 <a
                   href="#"
-                  class="capitalize hover:text-default-blue transition-all duration-300 text-default-text-col text-3xl font-semibold"
+                  class="capitalize hover:text-default-blue transition-all duration-300 text-default-text-col text-2xl md:text-3xl font-semibold"
                 >
                   Md Sweem
                 </a>
-                <div class="position text-default-light-stone font-semibold">
+                <div
+                  class="position text-default-light-stone text-md md:text-xl font-semibold"
+                >
                   <span class="uppercase">WATER TESTER</span>
                 </div>
               </div>
@@ -810,11 +706,13 @@
               <div class="info flex flex-col justify-center items-center">
                 <a
                   href="#"
-                  class="capitalize hover:text-default-blue transition-all duration-300 text-default-text-col text-3xl font-semibold"
+                  class="capitalize hover:text-default-blue transition-all duration-300 text-default-text-col text-2xl md:text-3xl font-semibold"
                 >
                   Christian Bale
                 </a>
-                <div class="position text-default-light-stone font-semibold">
+                <div
+                  class="position text-default-light-stone text-md md:text-xl font-semibold"
+                >
                   <span class="uppercase">WATER DELIVERY MAN</span>
                 </div>
               </div>
@@ -863,11 +761,13 @@
               <div class="info flex flex-col justify-center items-center">
                 <a
                   href="#"
-                  class="capitalize hover:text-default-blue transition-all duration-300 text-default-text-col text-3xl font-semibold"
+                  class="capitalize hover:text-default-blue transition-all duration-300 text-default-text-col text-2xl md:text-3xl font-semibold"
                 >
                   Hard Branots
                 </a>
-                <div class="position text-default-light-stone font-semibold">
+                <div
+                  class="position text-default-light-stone text-md md:text-xl font-semibold"
+                >
                   <span class="uppercase">EXPRESS DELIVERY</span>
                 </div>
               </div>
@@ -887,15 +787,17 @@
       <!-- Footer Top -->
       <div class="container footer_top">
         <!-- Contact -->
-        <div class="contact mt-40 flex justify-between items-center">
-          <h1 class="text-3xl text-semibold">
+        <div
+          class="contact mt-20 sm:mt-28 md:mt-40 flex justify-center md:justify-between items-center flex-wrap gap-6"
+        >
+          <h1 class="text-2xl sm:text-3xl text-semibold">
             Please <span class="text-default-blue">Call Us</span> to Take an
             Extraordinary Service
           </h1>
           <button class="">
             <a
               href="tel:http://(773)%20225-3523"
-              class="text-slate-50 bg-cyan-400 rounded-full py-5 px-10 text-xl flex justify-center items-center gap-4"
+              class="text-slate-50 bg-cyan-400 rounded-full py-3 px-8 sm:py-5 sm:px-10 text-lg sm:text-xl flex justify-center items-center gap-4"
               ><i class="fas fa-phone"></i>(773) 225-3523</a
             >
           </button>
@@ -908,7 +810,7 @@
       <!-- Footer Main -->
       <div class="footer_main">
         <div
-          class="content container grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-20"
+          class="content container grid sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-20"
         >
           <!-- item 1 -->
           <div class="item_1 flex flex-col gap-8 text-start">
@@ -961,29 +863,19 @@
             <!-- Links list -->
             <ul class="links-list grid gap-4">
               <li>
-                <a href="https://z.commonsupport.com/acuasafe/about-us/"
-                  >About Us</a
-                >
+                <a href="#">About Us</a>
               </li>
               <li>
-                <a href="https://z.commonsupport.com/acuasafe/our-services/"
-                  >Services</a
-                >
+                <a href="#">Services</a>
               </li>
               <li>
-                <a href="https://z.commonsupport.com/acuasafe/market-research/"
-                  >Market Research</a
-                >
+                <a href="#">Market Research</a>
               </li>
               <li>
-                <a href="https://z.commonsupport.com/acuasafe/blog-grid/"
-                  >Our Blog</a
-                >
+                <a href="#">Our Blog</a>
               </li>
               <li>
-                <a href="https://z.commonsupport.com/acuasafe/contact/"
-                  >Contact Us</a
-                >
+                <a href="#">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -1025,7 +917,7 @@
       <div class="footer_bottom bg-default-footer-bottom">
         <div class="container">
           <div
-            class="content py-10 mt-10 flex flex-wrap gap-4 justify-between items-center"
+            class="content py-10 mt-10 flex flex-col md:flex-row gap-4 justify-between items-center"
           >
             <!-- Copyright -->
             <div class="copyright">
